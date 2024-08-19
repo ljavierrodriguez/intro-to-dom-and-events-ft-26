@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="eventos.css">
+</head>
+<body>
+    
+
+    <form class="w-50" id="registerForm" action="register.php" method="POST"><!-- onsubmit="return validar()" -->
+        <h3 class="text-center mb-3 shadow py-3 bg-light text-primary">Register Form</h3>
+        <div class="form-group mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Name">
+            <small class="invalid-feedback">The field name is required</small>
+        </div>
+        <div class="form-group mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+            <small class="invalid-feedback">The field email is required</small>
+        </div>
+        <div class="form-group mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+            <small class="invalid-feedback">The field password is required</small>
+        </div>
+        <div class="form-group mb-3">
+            <label for="confirm_password" class="form-label">Confirm Password:</label>
+            <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="Confirm Password">
+            <small class="invalid-feedback">The field confirm password is required</small>
+        </div>
+        <button class="btn btn-primary btn-sm mb-3 p-2 w-100 d-flex justify-content-center align-items-center" id="btnRegister">
+            Register
+        </button>
+    </form>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./eventos.js"></script>
+</body>
+</html>
